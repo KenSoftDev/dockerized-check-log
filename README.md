@@ -14,6 +14,9 @@ docker run --rm -v /path/to/log:/var/ check-log --help
 docker run --rm -v /var/log/nginx:/var/log/nginx check-log -r -p curl -f /var/log/nginx/access.log --check-first
 ```
 
+
+# Example
+
 ```
 $ docker run --rm -v /var/log/nginx:/var/log/nginx check-log -r -p curl -f /var/log/nginx/access.log --check-first
 LOG CRITICAL: 1 warnings, 1 criticals for pattern /curl/.
